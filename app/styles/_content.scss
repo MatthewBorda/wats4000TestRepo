@@ -1,0 +1,18 @@
+//content style
+body {
+  color:green;
+}
+
+.marketing {
+    h4 {
+        color: $brand-warning;
+    }
+    p {
+        color: $brand-success;
+    }
+}
+
+.container .jumbotron {
+  @include border-top-radius(0);
+  @include border-bottom-radius(0);
+}
