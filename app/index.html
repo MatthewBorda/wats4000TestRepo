@@ -15,12 +15,20 @@
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <link id = "pagestyle" rel="stylesheet" href="styles/main.css">
+
+
+    <script>
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
+</script>
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
+    </script>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -42,6 +50,8 @@
         <h1>Egun on!</h1>
         <p class="lead">Always a pleasure scaffolding your apps.</p>
         <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
+        <p><a class="btn btn-lg btn-success" type="button" onclick= "swapStyleSheet('styles/main.css')" href="#">Light Theme </a></p>
+        <p><a class="btn btn-lg btn-warning" type="button" onclick= "swapStyleSheet('styles/dark.css')" href="#">Dark Theme </a></p>
       </div>
 
       <div class="row marketing">
