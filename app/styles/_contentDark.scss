@@ -1,21 +1,19 @@
 //content style
 body {
-  color:green;
+  color:#C3DFE8;
+  ;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+h3 {
+  color: $brand-sucess;
+}
+
 
 
 .marketing {
-    h4 {
-        color: $brand-warning;
-    }
-    p {
-        color: $brand-success;
-
-    }
+  background:black;
 }
-
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -28,4 +26,5 @@ body {
 .container .jumbotron {
   @include border-top-radius(0);
   @include border-bottom-radius(0);
+  background: #5C757D;
 }
